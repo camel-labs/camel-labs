@@ -1,0 +1,540 @@
+{
+	"kind": "List",
+	"apiVersion": "v1",
+	"metadata": {
+		"name": "rhiot-image-streams",
+		"annotations": {
+			"description": "ImageStream definitions for all Rhiot docker images."
+		}
+	},
+	"items": [
+		{
+			"kind": "ImageStream",
+			"apiVersion": "v1",
+			"metadata": {
+				"name": "rhiot-build"
+			},
+			"spec": {
+				"dockerImageRepository": "docker.io/rhiot/build"
+			},
+			"tags": [
+                {
+                    "name": "0.1.4",
+                    "annotations": {
+                        "description": "Rhiot Build",
+                        "iconClass": "icon-jboss",
+                        "tags": "builder,java,iot",
+                        "supports":"iot:0.1.4",
+                        "sampleRepo": "https://github.com/rhiot/quickstarts.git",
+                        "sampleContextDir": "",
+                        "version": "0.1.4"
+                    }
+                }
+            ]
+		},
+		{
+			"kind": "ImageStream",
+			"apiVersion": "v1",
+			"metadata": {
+				"name": "rhiot-paas-adapters"
+			},
+			"spec": {
+				"dockerImageRepository": "docker.io/rhiot/paas-adapters"
+			},
+			"tags": [
+                {
+                    "name": "0.1.4",
+                    "annotations": {
+                        "description": "Rhiot PaaS adapters",
+                        "iconClass": "icon-jboss",
+                        "tags": "builder,java,iot",
+                        "supports":"iot:0.1.4",
+                        "sampleRepo": "https://github.com/rhiot/quickstarts.git",
+                        "sampleContextDir": "",
+                        "version": "0.1.4"
+                    }
+                }
+            ]
+		},
+		{
+			"kind": "ImageStream",
+			"apiVersion": "v1",
+			"metadata": {
+				"name": "rhiot-paas-bootstrap"
+			},
+			"spec": {
+				"dockerImageRepository": "docker.io/rhiot/paas-bootstrap"
+			},
+			"tags": [
+                {
+                    "name": "0.1.4",
+                    "annotations": {
+                        "description": "Rhiot PaaS Bootstrap",
+                        "iconClass": "icon-jboss",
+                        "tags": "builder,java,iot",
+                        "supports":"iot:0.1.4",
+                        "sampleRepo": "https://github.com/rhiot/quickstarts.git",
+                        "sampleContextDir": "",
+                        "version": "0.1.4"
+                    }
+                }
+            ]
+		},
+		{
+			"kind": "ImageStream",
+			"apiVersion": "v1",
+			"metadata": {
+				"name": "rhiot-paas-services"
+			},
+			"spec": {
+				"dockerImageRepository": "docker.io/rhiot/paas-services"
+			},
+			"tags": [
+                {
+                    "name": "0.1.4",
+                    "annotations": {
+                        "description": "Rhiot PaaS services",
+                        "iconClass": "icon-jboss",
+                        "tags": "builder,java,iot",
+                        "supports":"iot:0.1.4",
+                        "sampleRepo": "https://github.com/rhiot/quickstarts.git",
+                        "sampleContextDir": "",
+                        "version": "0.1.4"
+                    }
+                }
+            ]
+		},
+		{
+			"kind": "ImageStream",
+			"apiVersion": "v1",
+			"metadata": {
+				"name": "rhiot-paas-single"
+			},
+			"spec": {
+				"dockerImageRepository": "docker.io/rhiot/paas-single"
+			},
+			"tags": [
+                {
+                    "name": "0.1.4",
+                    "annotations": {
+                        "description": "Rhiot PaaS single",
+                        "iconClass": "icon-jboss",
+                        "tags": "builder,java,iot",
+                        "supports":"iot:0.1.4",
+                        "sampleRepo": "https://github.com/rhiot/quickstarts.git",
+                        "sampleContextDir": "",
+                        "version": "0.1.4"
+                    }
+                }
+            ]
+		},
+		{
+			"kind": "ImageStream",
+			"apiVersion": "v1",
+			"metadata": {
+				"name": "rhiot-cloudlet-service"
+			},
+			"spec": {
+				"dockerImageRepository": "docker.io/rhiot/cloudlet-service"
+			},
+			"tags": [
+                {
+                    "name": "0.1.4",
+                    "annotations": {
+                        "description": "Rhiot Cloudlet service",
+                        "iconClass": "icon-jboss",
+                        "tags": "builder,java,iot",
+                        "supports":"iot:0.1.4",
+                        "sampleRepo": "https://github.com/rhiot/quickstarts.git",
+                        "sampleContextDir": "",
+                        "version": "0.1.4"
+                    }
+                }
+            ]
+		},
+		{
+			"kind": "ImageStream",
+			"apiVersion": "v1",
+			"metadata": {
+				"name": "rhiot-datastream-node"
+			},
+			"spec": {
+				"dockerImageRepository": "docker.io/rhiot/datastream-node"
+			},
+			"tags": [
+                {
+                    "name": "0.1.4",
+                    "annotations": {
+                        "description": "Rhiot Datastream node",
+                        "iconClass": "icon-jboss",
+                        "tags": "builder,java,iot",
+                        "supports":"iot:0.1.4",
+                        "sampleRepo": "https://github.com/rhiot/quickstarts.git",
+                        "sampleContextDir": "",
+                        "version": "0.1.4"
+                    }
+                }
+            ]
+		},
+		{
+			"kind": "ImageStream",
+			"apiVersion": "v1",
+			"metadata": {
+				"name": "rhiot-gateway-app"
+			},
+			"spec": {
+				"dockerImageRepository": "docker.io/rhiot/gateway-app"
+			},
+			"tags": [
+                {
+                    "name": "0.1.4",
+                    "annotations": {
+                        "description": "Rhiot Gateway app",
+                        "iconClass": "icon-jboss",
+                        "tags": "builder,java,iot",
+                        "supports":"iot:0.1.4",
+                        "sampleRepo": "https://github.com/rhiot/quickstarts.git",
+                        "sampleContextDir": "",
+                        "version": "0.1.4"
+                    }
+                }
+            ]
+		},
+		{
+			"kind": "ImageStream",
+			"apiVersion": "v1",
+			"metadata": {
+				"name": "rhiot-shell"
+			},
+			"spec": {
+				"dockerImageRepository": "docker.io/rhiot/shell"
+			},
+			"tags": [
+                {
+                    "name": "0.1.4",
+                    "annotations": {
+                        "description": "Rhiot shell",
+                        "iconClass": "icon-jboss",
+                        "tags": "builder,java,iot",
+                        "supports":"iot:0.1.4",
+                        "sampleRepo": "https://github.com/rhiot/quickstarts.git",
+                        "sampleContextDir": "",
+                        "version": "0.1.4"
+                    }
+                }
+            ]
+		},
+		{
+			"kind": "ImageStream",
+			"apiVersion": "v1",
+			"metadata": {
+				"name": "rhiot-spark-standalone"
+			},
+			"spec": {
+				"dockerImageRepository": "docker.io/rhiot/spark-standalone"
+			},
+			"tags": [
+                {
+                    "name": "0.1.4",
+                    "annotations": {
+                        "description": "Rhiot Spark standalone",
+                        "iconClass": "icon-jboss",
+                        "tags": "builder,java,iot",
+                        "supports":"iot:0.1.4",
+                        "sampleRepo": "https://github.com/rhiot/quickstarts.git",
+                        "sampleContextDir": "",
+                        "version": "0.1.4"
+                    }
+                }
+            ]
+		},
+		{
+			"kind": "ImageStream",
+			"apiVersion": "v1",
+			"metadata": {
+				"name": "rhiot-build"
+			},
+			"spec": {
+				"dockerImageRepository": "docker.io/rhiot/build"
+			},
+			"tags": [
+                {
+                    "name": "0.1.4",
+                    "annotations": {
+                        "description": "Rhiot Build",
+                        "iconClass": "icon-jboss",
+                        "tags": "builder,java,iot",
+                        "supports":"iot:0.1.4",
+                        "sampleRepo": "https://github.com/rhiot/quickstarts.git",
+                        "sampleContextDir": "",
+                        "version": "0.1.4"
+                    }
+                }
+            ]
+		},
+		{
+			"kind": "ImageStream",
+			"apiVersion": "v1",
+			"metadata": {
+				"name": "rhiot-cloudlet-console"
+			},
+			"spec": {
+				"dockerImageRepository": "docker.io/rhiot/cloudlet-console"
+			},
+			"tags": [
+                {
+                    "name": "0.1.4",
+                    "annotations": {
+                        "description": "Rhiot Cloudlet console",
+                        "iconClass": "icon-jboss",
+                        "tags": "builder,java,iot",
+                        "supports":"iot:0.1.4",
+                        "sampleRepo": "https://github.com/rhiot/quickstarts.git",
+                        "sampleContextDir": "",
+                        "version": "0.1.4"
+                    }
+                }
+            ]
+		},
+		{
+			"kind": "ImageStream",
+			"apiVersion": "v1",
+			"metadata": {
+				"name": "rhiot-cloudlet-device"
+			},
+			"spec": {
+				"dockerImageRepository": "docker.io/rhiot/cloudlet-device"
+			},
+			"tags": [
+                {
+                    "name": "0.1.4",
+                    "annotations": {
+                        "description": "Rhiot Cloudlet device management",
+                        "iconClass": "icon-jboss",
+                        "tags": "builder,java,iot",
+                        "supports":"iot:0.1.4",
+                        "sampleRepo": "https://github.com/rhiot/quickstarts.git",
+                        "sampleContextDir": "",
+                        "version": "0.1.4"
+                    }
+                }
+            ]
+		},
+		{
+			"kind": "ImageStream",
+			"apiVersion": "v1",
+			"metadata": {
+				"name": "rhiot-cloudlet-geofencing"
+			},
+			"spec": {
+				"dockerImageRepository": "docker.io/rhiot/cloudlet-geofencing"
+			},
+			"tags": [
+                {
+                    "name": "0.1.4",
+                    "annotations": {
+                        "description": "Rhiot Cloudlet geofencing",
+                        "iconClass": "icon-jboss",
+                        "tags": "builder,java,iot",
+                        "supports":"iot:0.1.4",
+                        "sampleRepo": "https://github.com/rhiot/quickstarts.git",
+                        "sampleContextDir": "",
+                        "version": "0.1.4"
+                    }
+                }
+            ]
+		},
+		{
+			"kind": "ImageStream",
+			"apiVersion": "v1",
+			"metadata": {
+				"name": "rhiot-cloudlet-webcam"
+			},
+			"spec": {
+				"dockerImageRepository": "docker.io/rhiot/cloudlet-webcam"
+			},
+			"tags": [
+                {
+                    "name": "0.1.4",
+                    "annotations": {
+                        "description": "Rhiot Cloudlet webcam",
+                        "iconClass": "icon-jboss",
+                        "tags": "builder,java,iot",
+                        "supports":"iot:0.1.4",
+                        "sampleRepo": "https://github.com/rhiot/quickstarts.git",
+                        "sampleContextDir": "",
+                        "version": "0.1.4"
+                    }
+                }
+            ]
+		},
+		{
+			"kind": "ImageStream",
+			"apiVersion": "v1",
+			"metadata": {
+				"name": "rhiot-cmd"
+			},
+			"spec": {
+				"dockerImageRepository": "docker.io/rhiot/cmd"
+			},
+			"tags": [
+                {
+                    "name": "0.1.4",
+                    "annotations": {
+                        "description": "Rhiot Cloudlet cmd",
+                        "iconClass": "icon-jboss",
+                        "tags": "builder,java,iot",
+                        "supports":"iot:0.1.4",
+                        "sampleRepo": "https://github.com/rhiot/quickstarts.git",
+                        "sampleContextDir": "",
+                        "version": "0.1.4"
+                    }
+                }
+            ]
+		},
+		{
+			"kind": "ImageStream",
+			"apiVersion": "v1",
+			"metadata": {
+				"name": "rhiot-datastreamnode"
+			},
+			"spec": {
+				"dockerImageRepository": "docker.io/rhiot/datastream-node"
+			},
+			"tags": [
+                {
+                    "name": "0.1.4",
+                    "annotations": {
+                        "description": "Rhiot datastream node",
+                        "iconClass": "icon-jboss",
+                        "tags": "builder,java,iot",
+                        "supports":"iot:0.1.4",
+                        "sampleRepo": "https://github.com/rhiot/quickstarts.git",
+                        "sampleContextDir": "",
+                        "version": "0.1.4"
+                    }
+                }
+            ]
+		},
+		{
+			"kind": "ImageStream",
+			"apiVersion": "v1",
+			"metadata": {
+				"name": "rhiot-demo-datastream"
+			},
+			"spec": {
+				"dockerImageRepository": "docker.io/rhiot/demo-datastream"
+			},
+			"tags": [
+                {
+                    "name": "0.1.4",
+                    "annotations": {
+                        "description": "Rhiot Demo Datastream",
+                        "iconClass": "icon-jboss",
+                        "tags": "builder,java,iot",
+                        "supports":"iot:0.1.4",
+                        "sampleRepo": "https://github.com/rhiot/quickstarts.git",
+                        "sampleContextDir": "",
+                        "version": "0.1.4"
+                    }
+                }
+            ]
+		},
+		{
+			"kind": "ImageStream",
+			"apiVersion": "v1",
+			"metadata": {
+				"name": "rhiot-deploy-gateway"
+			},
+			"spec": {
+				"dockerImageRepository": "docker.io/rhiot/deploy-gateway"
+			},
+			"tags": [
+                {
+                    "name": "0.1.4",
+                    "annotations": {
+                        "description": "Rhiot deploy-gateway",
+                        "iconClass": "icon-jboss",
+                        "tags": "builder,java,iot",
+                        "supports":"iot:0.1.4",
+                        "sampleRepo": "https://github.com/rhiot/quickstarts.git",
+                        "sampleContextDir": "",
+                        "version": "0.1.4"
+                    }
+                }
+            ]
+		},
+		{
+			"kind": "ImageStream",
+			"apiVersion": "v1",
+			"metadata": {
+				"name": "rhiot-devagent"
+			},
+			"spec": {
+				"dockerImageRepository": "docker.io/rhiot/devagent"
+			},
+			"tags": [
+                {
+                    "name": "0.1.4",
+                    "annotations": {
+                        "description": "Rhiot devagent",
+                        "iconClass": "icon-jboss",
+                        "tags": "builder,java,iot",
+                        "supports":"iot:0.1.4",
+                        "sampleRepo": "https://github.com/rhiot/quickstarts.git",
+                        "sampleContextDir": "",
+                        "version": "0.1.4"
+                    }
+                }
+            ]
+		},
+		{
+			"kind": "ImageStream",
+			"apiVersion": "v1",
+			"metadata": {
+				"name": "rhiot-fatjar"
+			},
+			"spec": {
+				"dockerImageRepository": "docker.io/rhiot/fatjar"
+			},
+			"tags": [
+                {
+                    "name": "0.1.4",
+                    "annotations": {
+                        "description": "Rhiot fatjar",
+                        "iconClass": "icon-jboss",
+                        "tags": "builder,java,iot",
+                        "supports":"iot:0.1.4",
+                        "sampleRepo": "https://github.com/rhiot/quickstarts.git",
+                        "sampleContextDir": "",
+                        "version": "0.1.4"
+                    }
+                }
+            ]
+		},
+		{
+			"kind": "ImageStream",
+			"apiVersion": "v1",
+			"metadata": {
+				"name": "rhiot-openalpr"
+			},
+			"spec": {
+				"dockerImageRepository": "docker.io/rhiot/openalpr"
+			},
+			"tags": [
+                {
+                    "name": "0.1.4",
+                    "annotations": {
+                        "description": "Rhiot openalpr",
+                        "iconClass": "icon-jboss",
+                        "tags": "builder,java,iot",
+                        "supports":"iot:0.1.4",
+                        "sampleRepo": "https://github.com/rhiot/quickstarts.git",
+                        "sampleContextDir": "",
+                        "version": "0.1.4"
+                    }
+                }
+            ]
+		}
+	]
+}
