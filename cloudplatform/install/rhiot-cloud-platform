@@ -14,6 +14,7 @@
 #  limitations under the License.
 
 #!/usr/bin/env bash
+set -x
 
 ### Common function
 
@@ -164,15 +165,28 @@ else
     exe docker start openshift-server
 fi
 
+### OpenShift: authentication. TODO: I'll hard-code the username and password, but we can later change to 
+### receive from parameters.
+exe docker exec -it openshift-server oc login -u admin -p admin https://localhost:8443
+
+### OpenShift: create rhiot project
+exe docker exec -it openshift-server oc new-project rhiot --display-name="Rhiot Cloud Platform" --description="Rhiot Cloud Platform contains all services required in Rhiot Architecture." 
+
 ### MongoDB
 
 log_info "MongoDB"
 if [ $(docker ps -a | grep mongodb_data | wc -l) -eq 0 ]; then
     log_info "MongoDB data volume doesn't exist. Creating..."
-    exe docker run -v /data/db --name mongodb_data busybox true
+    #exe docker run -v /data/db --name mongodb_data busybox true
+    exe docker exec -it openshift-server oc new-app mongodb-persistent--param=DATABASE_SERVICE_NAME=rhiot --param=MONGODB_USER=rhiot --param=MONGODB_PASSWORD=rhiot
 fi
 exe docker run -d --volumes-from mongodb_data --name mongodb -p 27017:27017 mongo
+exe docker exec -it openshift-server oc volume dc/mongodb --add --type=emptyDir  --name=mongodb-data --overwrite
 log_info "MongoDB started"
+
+### Expose MongoDB instance 
+docker exec -ti openshift-server oc port-forward $(oc get pod | awk 'NR>1' | awk '{print $1}') 27017  &
+log_info "MongoDB OpenShift instance is listening in localhost:27017..."
 
 ### KeyCloak
 
