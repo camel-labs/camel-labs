@@ -7,7 +7,7 @@
         <groupId>io.rhiot</groupId>
         <version>0.1.5-SNAPSHOT</version>
         <artifactId>rhiot-cloudplatform</artifactId>
-        <relativePath>..</relativePath>
+        <relativePath>../cloudplatform</relativePath>
     </parent>
     <name>Rhiot :: Camel components</name>
     <artifactId>rhiot-camel</artifactId>
